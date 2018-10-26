@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/space_bg"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.example.uiuxdesign.custom_views.views.MyTextView
+            android:id="@+id/field_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/top_round"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="ایمیل"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="5dp"
+            android:padding="32dp"
+            android:paddingTop="32dp">
+
+            <com.example.uiuxdesign.custom_views.views.MyEditText
+                android:id="@+id/email_field"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/stroke"
+                android:drawableRight="@drawable/ic_email"
+                android:gravity="center"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="#fff"
+                android:textColorHint="#a8a7a8" />
+
+            <com.example.uiuxdesign.custom_views.views.MyEditText
+                android:id="@+id/pass_field"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/stroke"
+                android:drawableRight="@drawable/ic_login"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="#fff"
+                android:textColorHint="#a8a7a8"
+                android:visibility="invisible" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bottom_round">
+
+
+            <ImageButton
+                android:id="@+id/previous"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginLeft="8dp"
+                android:background="#0000"
+                android:padding="8dp"
+                android:rotation="180"
+                android:src="@drawable/ic_arrow"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginRight="8dp"
+                android:background="#0000"
+                android:padding="8dp"
+                android:src="@drawable/next" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

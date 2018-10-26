@@ -9,7 +9,7 @@
             android:viewportHeight="24">
             <path
                 android:name="path"
-                android:pathData="M 2 2 L 12 12 L 2 22"
+                android:pathData="M 2 16 L 8 20 L 20 4"
                 android:strokeWidth="2"
                 android:strokeColor="#ffff" />
         </vector>
@@ -19,8 +19,8 @@
             <objectAnimator
                 android:duration="300"
                 android:propertyName="pathData"
-                android:valueFrom="M 2 2 L 12 12 L 2 22"
-                android:valueTo="M 2 16 L 8 20 L 20 4"
+                android:valueTo="M 2 2 L 12 12 L 2 22"
+                android:valueFrom="M 2 16 L 8 20 L 20 4"
                 android:valueType="pathType" />
         </aapt:attr>
     </target>
