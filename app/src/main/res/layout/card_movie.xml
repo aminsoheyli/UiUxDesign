@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/colorPrimaryDark"
+    app:cardCornerRadius="5dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.makeramen.roundedimageview.RoundedImageView
+            app:riv_corner_radius_top_left="5dp"
+            android:id="@+id/movie_card_img"
+            app:riv_corner_radius_top_right="5dp"
+            android:src="@drawable/poster"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#fff"/>
+        <com.example.uiuxdesign.custom_views.views.MyTextView
+            android:id="@+id/movie_card_name"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:text="Mortal Engines"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:alpha=".5"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#fff"/>
+        <com.example.uiuxdesign.custom_views.views.MyTextView
+            android:textColor="#fff"
+            android:id="@+id/movie_card_sub"
+            android:textSize="14sp"
+            android:text="موضوع :‌ جنایی"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:alpha=".5"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#fff"/>
+        <FrameLayout
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layoutDirection="ltr"
+                android:transitionName="imdb"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/bg_imdb"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:id="@+id/movie_card_rate"
+                    android:text="7.1"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_margin="4dp"
+                    android:layout_width="1dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_height="match_parent"/>
+                <ImageView
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/ic_imdb"
+                    android:layout_width="36dp"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+            <ImageButton
+                android:layout_gravity="right"
+                android:padding="8dp"
+                android:background="#0000"
+                android:src="@drawable/ic_like_stroke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

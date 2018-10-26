@@ -6,6 +6,6 @@
             android:fromDegrees="0"
             android:pivotX="50%"
             android:pivotY="50%"
-            android:toDegrees="360"></rotate>
+            android:toDegrees="360"/>
     </item>
 </layer-list>

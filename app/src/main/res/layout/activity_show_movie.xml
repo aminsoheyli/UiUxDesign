@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".ShowMovieActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="200dp"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/show_movie_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/poster"
+            android:transitionName="movieImage" />
+
+        <ImageButton
+            android:id="@+id/show_like_button"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#0000"
+            android:src="@drawable/ic_like_stroke"
+            android:transitionName="movieLike"
+            android:translationZ="5dp" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/bottom_field"
+        android:elevation="8dp"
+        android:minHeight="220dp"
+        android:orientation="vertical"
+        android:paddingBottom="24dp">
+
+        <com.example.uiuxdesign.custom_views.views.MyTextView
+            android:id="@+id/show_movie_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="Mortal Engines"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:transitionName="movieName" />
+
+        <com.example.uiuxdesign.custom_views.views.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:text="موضوع : اکشن,غم‌انگیز"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <com.example.uiuxdesign.custom_views.views.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="14sp"
+            android:text="کارگردان : سینا سعیدی"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg_imdb"
+            android:orientation="horizontal"
+            android:transitionName="imdb">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:text="7.1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/ic_imdb" />
+
+
+        </LinearLayout>
+
+        <com.example.uiuxdesign.custom_views.views.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="14sp"
+            android:text="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که ... "
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

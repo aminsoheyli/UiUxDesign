@@ -14,7 +14,7 @@
         android:elevation="8dp"
         android:translationZ="4dp">
 
-        <com.example.uiuxdesign.custom_views.views.MyTextView
+        <com.sizdah.cnasaeedi.cna.custom_views.views.MyTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -62,7 +62,7 @@
                     android:layout_marginTop="8dp"
                     android:orientation="horizontal">
 
-                    <com.example.uiuxdesign.custom_views.views.MyTextView
+                    <com.sizdah.cnasaeedi.cna.custom_views.views.MyTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -85,7 +85,7 @@
                     android:layout_marginTop="16dp"
                     android:orientation="horizontal">
 
-                    <com.example.uiuxdesign.custom_views.views.MyTextView
+                    <com.sizdah.cnasaeedi.cna.custom_views.views.MyTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -108,7 +108,7 @@
                     android:layout_marginTop="16dp"
                     android:orientation="horizontal">
 
-                    <com.example.uiuxdesign.custom_views.views.MyTextView
+                    <com.sizdah.cnasaeedi.cna.custom_views.views.MyTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -155,10 +155,10 @@
                         android:layout_height="match_parent"
                         android:layout_margin="8dp"
                         android:alpha=".5"
-                        android:background="@drawable/space_bg"
+                        android:background="@drawable/poster_gradient"
                         android:elevation="5dp" />
 
-                    <com.example.uiuxdesign.custom_views.views.MyTextView
+                    <com.sizdah.cnasaeedi.cna.custom_views.views.MyTextView
                         android:id="@+id/movie_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

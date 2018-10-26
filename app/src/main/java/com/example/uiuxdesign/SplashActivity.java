@@ -14,7 +14,8 @@ import android.widget.ProgressBar;
 
 public class SplashActivity extends AppCompatActivity {
     View black, orange;
-    Animation rotate, dance, up;
+    Animation rotate;
+    Animation up;
     Button loginButton;
     ProgressBar progressBar;
     CountDownTimer wait, timer, t;
@@ -28,23 +29,19 @@ public class SplashActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.progressbar);
         orange = findViewById(R.id.orange_bg);
         black = findViewById(R.id.black_bg);
-        //dance = AnimationUtils.loadAnimation(this,R.anim.dance);
         up = AnimationUtils.loadAnimation(this, R.anim.slide_up);
         loginButton.setVisibility(View.INVISIBLE);
-        /*CountDownTimer timer1 = new CountDownTimer(3000, 1000) {
-            @Override
-            public void onTick(long millisUntilFinished) {
-
-            }
-
-            @Override
-            public void onFinish() {
-                loginButton.setVisibility(View.VISIBLE);
-                progressBar.setVisibility(View.INVISIBLE);
-                loginButton.startAnimation(up);
-            }
-        };*/
         spinner();
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
+                startActivity(intent);
+                finish();
+
+            }
+        });
+
     }
 
     public void spinner() {
@@ -78,7 +75,7 @@ public class SplashActivity extends AppCompatActivity {
 
                             @Override
                             public void onFinish() {
-                                CountDownTimer timer = new CountDownTimer(3000, 1000) {
+                                CountDownTimer timer = new CountDownTimer(2000, 1000) {
                                     @Override
                                     public void onTick(long millisUntilFinished) {
 
